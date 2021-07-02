@@ -51,12 +51,6 @@ jobs:
         run: |
           python cli.py issue --issue_number ${{ secrets.PushUps_NUMBER }} --repo_name ${{ secrets.REPO_NAME }} --token ${{ secrets.G_T }} --me ${{ env.ME }}
 
-
-      - name: Mv svg files to examples
-        # only for me to show
-        if: github.repository_owner == 'yihong0618'
-        run: mv OUT_FOLDER/*.svg examples/ && mv OUT_FOLDER/*.stl examples/
-
       - name: Push new svg posters
         uses: github-actions-x/commit@v2.6
         with:
