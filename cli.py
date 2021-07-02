@@ -46,7 +46,7 @@ LOADER_DICT = {
     "dota2": Dota2Loader,
 }
 
-OUT_FOLDER = os.path.join(os.getcwd(), "Data")
+OUT_FOLDER = os.path.join(os.getcwd(), "OUT_FOLDER")
 
 
 def main():
