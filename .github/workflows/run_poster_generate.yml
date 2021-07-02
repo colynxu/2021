@@ -49,7 +49,7 @@ jobs:
       - name: Run sync issue script
         if: contains(env.TYPE, 'issue')
         run: |
-          python cli.py issue --issue_number ${{ secrets.PushUps_NUMBER }} --repo_name ${{ secrets.REPO_NAME }} --token ${{ secrets.G_T }} --me ${{ env.ME }}
+          python cli.py issue --issue_number ${{ secrets.PushUps_NUMBER }} --repo_name ${{ secrets.REPO_NAME }} --token ${{ secrets.G_T }}
 
 
       - name: Mv svg files to examples
