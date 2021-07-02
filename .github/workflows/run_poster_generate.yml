@@ -14,8 +14,8 @@ env:
   # If you fork this please change the type to yours below
   TYPE: "issue" # support strava/issue, Please change the 'pass' it to your own separated by commas
   ME: Yihong0618
-  GITHUB_NAME: yihong0618
-  GITHUB_EMAIL: zouzou0208@gmail.com
+  GITHUB_NAME: colynxu
+  GITHUB_EMAIL: colynxu@gmail.com
 
 jobs:
   sync:
