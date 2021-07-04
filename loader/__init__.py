@@ -3,6 +3,7 @@ from .cichang_loader import CiChangLoader
 from .dota2_loader import Dota2Loader
 from .duolingo_loader import DuolingoLoader
 from .from_github_issue_loader import GitHubIssuesLoader
+from .hour_loader import GithubIssueHourLoader
 from .github_loader import GitHubLoader
 from .gitlab_loader import GitLabLoader
 from .gpx_loader import GPXLoader
@@ -21,6 +22,7 @@ __all__ = (
     "Dota2Loader",
     "DuolingoLoader",
     "GitHubIssuesLoader",
+    "GithubIssueHourLoader",
     "GitHubLoader",
     "GitLabLoader",
     "GPXLoader",
