@@ -7,5 +7,4 @@ Make everything a GitHub svg poster and [skyline](https://skyline.github.com/)!
 
 ![](https://github.com/colynxu/GitHubPoster/blob/main/examples/issue.svg)
 
-
-![](https://github.com/yihong0618/GitHubPoster/blob/main/examples/shanbay.svg)
+![](https://raw.githubusercontent.com/colynxu/GitHubPoster/main/examples/times.svg)
