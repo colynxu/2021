@@ -4,7 +4,7 @@ from github import Github
 from .base_loader import BaseLoader
 
 class GithubIssueHourLoader(BaseLoader):
-    unit = "hourss"
+    unit = "hours"
 
     def __init__(self, from_year, to_year, **kwargs):
         super().__init__(from_year, to_year)
