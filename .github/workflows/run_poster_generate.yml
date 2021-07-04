@@ -12,7 +12,7 @@ env:
   # please change to your own config.
   # this actions generate only this year
   # If you fork this please change the type to yours below
-  TYPE: "issue" # support strava/issue, Please change the 'pass' it to your own separated by commas
+  TYPE: "issue, times" # support strava/issue, Please change the 'pass' it to your own separated by commas
   ME: ColynXu
   GITHUB_NAME: colynxu
   GITHUB_EMAIL: colynxu@gmail.com
@@ -50,6 +50,11 @@ jobs:
         if: contains(env.TYPE, 'issue')
         run: |
           python cli.py issue --issue_number ${{ secrets.PushUps_NUMBER }} --repo_name ${{ secrets.REPO_NAME }} --token ${{ secrets.G_T }} --me ${{ env.ME }}
+
+     - name: Run sync times script
+        if: contains(env.TYPE, 'times')
+        run: |
+          python cli.py times --issue_number ${{ secrets.ENGLISH_NUMBER }} --repo_name ${{ secrets.REPO_NAME }} --token ${{ secrets.G_T }} --me ${{ env.ME }}
 
        
       - name: Mv svg files to examples
