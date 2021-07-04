@@ -51,7 +51,7 @@ jobs:
         run: |
           python cli.py issue --issue_number ${{ secrets.PushUps_NUMBER }} --repo_name ${{ secrets.REPO_NAME }} --token ${{ secrets.G_T }} --me ${{ env.ME }}
 
-     - name: Run sync times script
+      - name: Run sync times script
         if: contains(env.TYPE, 'times')
         run: |
           python cli.py times --issue_number ${{ secrets.ENGLISH_NUMBER }} --repo_name ${{ secrets.REPO_NAME }} --token ${{ secrets.G_T }} --me ${{ env.ME }}
